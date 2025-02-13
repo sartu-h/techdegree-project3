@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    /* reset the page */
     margin: 0;
     padding: 0;
     font-family: "PT Serif", serif;
@@ -28,10 +29,12 @@ h1 + p + p{
     border-bottom: 5px solid rgba(45,57,69,255);
 }
 
+/* heading font colors */
 h1 + p, h2, h3{
     color: rgba(45,57,69,255);
 }
 
+/* rest of pages font colors */
 h1 + p + p, label, select, legend + p, footer, h3{
     color: slategray;
 }
@@ -58,7 +61,7 @@ fieldset, input, textarea{
     border: none;
 }
 
-
+/* my design for contact info part */
 #fieldset_one{
     margin-top: 10px;
     display: flex;
@@ -78,20 +81,33 @@ label + input, select, textarea{
     width: 50%;
  }
 
-::placeholder{
+input[id="name"]::placeholder, input[id="email"]::placeholder{
     text-align: right;
-    padding-right: 10px;
     font-style: italic;
     font-weight: 200;
+    padding-right: 10px;
+
+}
+::placeholder{
+    padding-left: 10px;
+    
 }
 
+textarea::placeholder{
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* adding some spacing for some elements */
 legend + p, h3, input[type="checkbox"]{
     margin-bottom: 10px;
 }
 
+/* adding space between checkboxes/radio and their labels */
 input[type="checkbox"], input[type="radio"]{
     margin-left: 10px;
 }
+/* adding space between checkboxes/radio */
 input[type="checkbox"] + label, input[type="radio"] + label{
     padding: 15px;
 }
@@ -100,6 +116,7 @@ input[type="radio"] {
     margin-bottom: 10px;
 }
 
+/* creating space for textarea label */
 label[for="topics"] {
     display: block; 
     margin: 12px 0 0; 
@@ -113,6 +130,7 @@ textarea{
     height: 100px;
 }
 
+/* button style */
 input[type="submit"]{
     margin-top: 20px;
     height: 50px;
@@ -134,6 +152,7 @@ input:focus, select:focus, textarea:focus {
 
 @media screen and (min-width: 768px){
     
+    /* make the form smaller and centered */
     main, h1 + p + p {
         width: 80%; /* Makes the form responsive */
         max-width: 600px; /* Prevents it from getting too wide */
@@ -152,6 +171,7 @@ input:focus, select:focus, textarea:focus {
         padding-bottom: 30px;
     }
 
+    /* change where labels/inputs are placed in contact info */
     #fieldset_one{
         flex-direction: row;
         flex-wrap: wrap;
@@ -177,11 +197,3 @@ input:focus, select:focus, textarea:focus {
         margin-top: 20px;
     }
 }
-
-/* @media screen and (min-width: 420px) and (max-width: 767px) {
-
-    main{
-        padding: 5px 15px 0;
-    }
-    
-} */
