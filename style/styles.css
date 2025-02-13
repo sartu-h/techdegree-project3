@@ -134,6 +134,10 @@ footer{
         margin: 5px auto; 
     }
 
+    main{
+        line-height: 2;
+    }
+
     footer{
         margin-bottom: 100px;
     }
@@ -151,6 +155,7 @@ footer{
     #fieldset_one input, #fieldset_one select{
         flex-basis: 75%;
         margin-left: 15px;
+        margin-bottom: 15px;
     }
 
     #fieldset_one label{
@@ -161,4 +166,7 @@ footer{
         max-width: 30%;
     }
 
+    #fieldset_two h2{
+        margin-top: 20px;
+    }
 }
