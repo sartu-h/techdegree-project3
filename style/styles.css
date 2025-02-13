@@ -146,6 +146,7 @@ footer{
     font-style: italic;
 }
   
+/* css transitions */
 input, select, textarea{
     transition: background-color 0.5s;
 }
@@ -154,12 +155,14 @@ input:focus, select:focus, textarea:focus {
     background-color: lightblue; 
   }
 
+  /* added style for background */
   #fieldset_two{
     background-color: #f4f4f4;
     border-radius: 8px;
     padding: 10px;
   }
 
+  /* adjusted padding for legend */
   #fieldset_two legend{
     padding-top: 40px;
   }
