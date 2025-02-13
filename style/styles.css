@@ -171,8 +171,8 @@ input:focus, select:focus, textarea:focus {
     
     /* make the form smaller and centered */
     main, h1 + p + p {
-        width: 80%; /* Makes the form responsive */
-        max-width: 600px; /* Prevents it from getting too wide */
+        width: 80%; 
+        max-width: 700px; 
         margin: 5px auto; 
     }
 
