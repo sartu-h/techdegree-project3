@@ -17,9 +17,9 @@ h1{
 }
 
 h1 + p{
-    margin-top: 20px;
+    margin-top: 40px;
     font-weight: bold;
-    font-size: larger;
+    font-size: 25px;
 }
 
 h1 + p + p{
@@ -35,6 +35,10 @@ h1 + p, h2, h3{
 h1 + p + p, label, select, legend + p, footer, h3{
     color: slategray;
 }
+
+h2{
+    font-size: 20px;
+}
 h3{
     font-size: 16px;
     font-weight: 400;
@@ -42,14 +46,14 @@ h3{
 }
 main{
     border-top: 3px solid rgba(45,57,69,255);
-    margin: 2px 10px 0;
+    margin: 5px 10px 0;
 }
 
 legend{
     padding: 15px 0 15px;
 }
 
-fieldset, input{
+fieldset, input, textarea{
     border: none;
 }
 
@@ -122,3 +126,39 @@ footer{
 }
   
 
+@media screen and (min-width: 768px){
+    
+    main, h1 + p + p {
+        width: 80%; /* Makes the form responsive */
+        max-width: 600px; /* Prevents it from getting too wide */
+        margin: 5px auto; 
+    }
+
+    footer{
+        margin-bottom: 100px;
+    }
+
+    h1 + p + p{
+        padding-bottom: 30px;
+    }
+
+    #fieldset_one{
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    #fieldset_one input, #fieldset_one select{
+        flex-basis: 75%;
+        margin-left: 15px;
+    }
+
+    #fieldset_one label{
+        flex-basis: 20%;
+    }
+
+    #zip{
+        max-width: 30%;
+    }
+
+}
