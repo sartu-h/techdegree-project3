@@ -146,8 +146,12 @@ footer{
     font-style: italic;
 }
   
+input, select, textarea{
+    transition: width 1s, height 1s, background-color 0.5s;
+}
+
 input:focus, select:focus, textarea:focus {
-    border: 3px solid blueviolet;
+    background-color: lightblue; 
   }
 
 @media screen and (min-width: 768px){
