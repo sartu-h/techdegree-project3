@@ -157,6 +157,11 @@ input:focus, select:focus, textarea:focus {
   #fieldset_two{
     background-color: #f4f4f4;
     border-radius: 8px;
+    padding: 10px;
+  }
+
+  #fieldset_two legend{
+    padding-top: 40px;
   }
 
 @media screen and (min-width: 768px){
